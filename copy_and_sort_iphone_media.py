@@ -17,7 +17,7 @@ def photoDate(f):
 ###################### Main program ########################
 
 # Where the photos are and where they're going.
-sourceDir = os.environ['HOMEPATH'] + '/iPhone'
+sourceDir = os.environ['HOMEPATH'] + '/Pictures/iPhone'
 destDir = os.environ['HOMEPATH'] + '/Pictures'
 errorDir = destDir + '/Unsorted/'
 
@@ -83,9 +83,9 @@ for photo in photos:
 
 # Report the problem files, if any.
 if len(problems) > 0:
-  print "\nProblem files:"
-  print "\n".join(problems)
-  print "These can be found in: %s" % errorDir
+  print ("\nProblem files:")
+  print ("\n".join(problems))
+  print ("These can be found in: %s" % errorDir)
 
 ###########################################################################################3  
 ###########################################################################################3
@@ -155,7 +155,7 @@ for photo in photos:
 
 # Report the problem files, if any.
 if len(problems) > 0:
-  print "\nProblem files:"
-  print "\n".join(problems)
-  print "These can be found in: %s" % errorDir
+  print ("\nProblem files:")
+  print ("\n".join(problems))
+  print ("These can be found in: %s" % errorDir)
   
